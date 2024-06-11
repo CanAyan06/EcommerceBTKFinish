@@ -1,0 +1,12 @@
+
+<div class="products-container">
+    @for (product of product; track product.id) {
+        <div class="product">
+            <img class="foto" [src]="product.imageUrl" alt="{{ product.name }}">
+            <h3>{{product.name}}</h3>
+            <p>{{product.price | currency:'TRY' }}</p>
+            <button class="btn" (click)="addToCart(product)">Sepete Ekle</button>
+        </div>
+    }
+  </div>
+  

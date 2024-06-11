@@ -1,0 +1,152 @@
+
+
+.container {
+    height: 900vh;
+    width: 100vw;
+    max-height: 800px;
+    max-width: 1280px;
+    min-height: 600px;
+    min-width: 1000px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+  }
+  
+  .border {
+    height: 369px;
+    width: 290px;
+    background: transparent;
+    border-radius: 10px;
+    transition: border 1s;
+    position: relative;
+  }
+  
+  .border:hover {
+    border: 1px solid white;
+  }
+  
+  .card {
+    height: 379px;
+    width: 300px;
+    background: black; /* Renk tanımı bir defa yapılmalı */
+    border-radius: 10px;
+    transition: background 0.8s;
+    overflow: hidden;
+    box-shadow: 0 70px 63px -60px #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .card0 {
+    background: url('https://i.pinimg.com/originals/75/49/6e/75496e55be60c1cbf480d6e76bd11ec4.jpg') center center no-repeat;
+    background-size: 300px;
+  }
+  
+  .card0:hover {
+    background: url('https://cdn.wallpapersafari.com/85/22/fpBETW.jpg') left center no-repeat;
+    background-size: 600px;
+  }
+  
+  .card1 {
+    background: url('https://w0.peakpx.com/wallpaper/446/8/HD-wallpaper-queen-of-the-nature-black-dress-cosplay-cross-girl-nature-queen-rose-petals-thunder-white-hair-wind-thumbnail.jpg') center center no-repeat;
+    background-size: 300px;
+  }
+  
+  .card1:hover {
+    background: url('https://downloadwap.com/thumbs2/wallpapers/p2/2019/misc/15/3da0bdf913269672.jpg') left center no-repeat;
+    background-size: 600px;
+  }
+  
+  .card2 {
+    background: url('https://m.media-amazon.com/images/I/71x5ntU43-L._AC_UF1000,1000_QL80_.jpg') center center no-repeat;
+    background-size: 300px;
+  }
+  
+  .card2:hover {
+    background: url('https://w0.peakpx.com/wallpaper/364/766/HD-wallpaper-rogphone-855-plus-asus-rog-phone-rog-phone-thumbnail.jpg') left center no-repeat;
+    background-size: 600px;
+  }
+  
+  h2 {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: white;
+    margin: 20px;
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  
+  .fa {
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  
+  .icons {
+    position: absolute;
+    fill: #fff;
+    color: #fff;
+    height: 130px;
+    top: 226px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .button {
+    display: flex;
+  }
+  
+  .box {
+    width: 35px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    transition: all .8s;
+    cursor: pointer;
+    position: relative;
+    background: rgb(219, 71, 13);
+    overflow: hidden;
+  }
+  
+  .box:before {
+    content: "A";
+    position: absolute;
+    top: 0;
+    background: #0f0f0f;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(100%);
+    transition: transform .4s;
+  }
+  
+  .box:nth-child(2)::before {
+    transform: translateY(-100%);
+    content: 'Y';
+  }
+  
+  .box:nth-child(3)::before {
+    content: 'A';
+  }
+  
+  .box:nth-child(4)::before {
+    transform: translateY(-100%);
+    content: 'N';
+  }
+  
+  .box:nth-child(5)::before {
+    content: '';
+  }
+  
+  .button:hover .box:before {
+    transform: translateY(0);
+  }

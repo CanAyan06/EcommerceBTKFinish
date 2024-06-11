@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Monster Tulpar Abra A5",
+        "price": "10000",
+        "id": "1",
+        "imageUrl": "https://www.monsternotebook.com.tr/UPLOAD/urun-gorselleri-yeni/TULPAR/kucuk-resimler-2/thumb/tulpar-t5-v20.1-resim-2_medium.png"
+    },
+    {
+        "name": "Monster Tulpar Abra A7",
+        "price": "10000",
+        "id": "2",
+        "imageUrl": "https://resim.epey.com/898473/m_monster-tulpar-t5-v23-3-2-1.jpg"
+    },
+    {
+        "name": "Casper Via",
+        "price": "15000",
+        "id": "3",
+        "imageUrl": "https://www.casper.com.tr/uploads/2023/11/01-4_op.webp"
+    }
+]

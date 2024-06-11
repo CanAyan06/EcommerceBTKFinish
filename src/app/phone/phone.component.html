@@ -1,0 +1,18 @@
+<!-- Ürünlerin yer alacağı ana konteyner -->
+<div class="products-container">
+    <!-- Ürünler arasında döngü oluştur, her bir ürün için 'track by' ile izleme yapılır -->
+    @for (product of product; track product.id) {
+        <!-- Tek bir ürünü temsil eden div -->
+        <div class="product">
+            <!-- Ürün resmi -->
+            <img class="foto" [src]="product.imageUrl" alt="{{ product.name }}">
+            <!-- Ürün adı -->
+            <h3>{{product.name}}</h3>
+            <!-- Ürün fiyatı -->
+            <p>{{product.price| currency}}</p>
+            <!-- Sepete ekleme düğmesi -->
+            <button class="btn" (click)="addToCart(product)">Sepete Ekle</button>
+        </div>
+    }
+  </div>
+  

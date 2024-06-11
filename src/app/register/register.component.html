@@ -1,0 +1,51 @@
+<div class="back">
+    <div class="loading">
+        <div class="loading-box">
+          <div class="WH color l1"></div>
+          <div class="ball color"></div>
+          <div class="WH color l2"></div>
+        </div>
+      </div>
+      
+<form class="form" [formGroup]="form">
+    <p class="title">Üye Ol </p>
+    
+  <section class="loader">
+
+    <div class="slider" style="--i:0">
+    </div>
+    <div class="slider" style="--i:1">
+    </div>
+    <div class="slider" style="--i:2">
+    </div>
+    <div class="slider" style="--i:3">
+    </div>
+    <div class="slider" style="--i:4">
+    </div>
+  </section>
+
+
+
+    <p class="message">Şimdi kaydolun ve uygulamamıza tam erişim sağlayın. </p>
+        <div class="flex">
+        <label>
+            <input required="" placeholder=" " type="text" class="input">
+            <span>Adı</span>
+        </label>
+        <label>
+            <input required="" placeholder="" type="text" class="input">
+            <span>Soyadı</span>
+        </label>
+    </div>  
+    <label>
+        <input required="" placeholder="" type="email" class="input" formControlName="email">
+        <span>Email</span>
+    </label> 
+    <label>
+        <input required="" placeholder="" type="password" class="input" formControlName="password">
+        <span>Şifre</span>
+    </label>
+    <button class="submit" (click)="register()">Submit</button>
+    <p class="signin">Zaten Hesabım var ? <a href="login">Giriş Yap</a> </p>
+</form>
+</div>

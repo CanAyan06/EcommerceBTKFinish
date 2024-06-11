@@ -1,0 +1,194 @@
+<header class="py-4 shadow-xl bg-blue-500 lg:bg-red-500">
+  <div class="container flex items-center justify-between">
+    <a href="">
+      <img
+        src="https://i.ytimg.com/vi/TpNyYI-X1Ho/maxresdefault.jpg"
+        class="h-14"
+      />
+    </a>
+    <section class="loader">
+      <div class="slider" style="--i: 0"></div>
+      <div class="slider" style="--i: 1"></div>
+      <div class="slider" style="--i: 2"></div>
+      <div class="slider" style="--i: 3"></div>
+      <div class="slider" style="--i: 4"></div>
+    </section>
+    <div class="space-x-4 flex items-center">
+      <a
+        href="#"
+        class="block text-center text-gray-700 hover:text-primary transition relative"
+      >
+        <span
+          class="absolute -right-2 -top-1 w-5 h-5 rounded-lg flex items-center justify-center bg-primary text-white text-xs font-bold"
+        >
+          2</span
+        >
+        <div class="text-2xl">
+          <i class="fa-solid fa-heart"></i>
+        </div>
+      </a>
+      <a
+        href="sepet"
+        class="block text-center text-gray-700 hover:text-primary transition relative"
+      >
+        <span
+          class="absolute -right-2 -top-1 w-5 h-5 rounded-lg flex items-center justify-center bg-primary text-white text-xs font-bold"
+          >{{ sepetSayi }}</span
+        >
+        <div class="text-2xl">
+          <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+      </a>
+      <a
+        href="#"
+        class="block text-center text-gray-700 hover:text-primary transition relative"
+      >
+        <div class="text-2xl">
+          <i class="fa-solid fa-user"></i>
+        </div>
+      </a>
+    </div>
+  </div>
+</header>
+
+
+<nav class="bg-second hidden lg:block">
+  <div class="container">
+    <div class="flex">
+      <div
+        class="px-8 py-4 bg-primary flex items-center cursor-pointer group relative"
+      >
+        <span class="text-white">
+          <i class="fa-solid fa-bars"></i>
+        </span>
+        <span class="ml-2 text-white">Kategori</span>
+
+        <div
+          class="absolute left-0 top-full w-full bg-white shadow-xl py-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300 z-50 divide-y divide-gray-500 divide-dashed"
+        >
+          <a
+            class="px-6 py-3 flex items-center hover:bg-gray-200 transition"
+            href="ayakkabı"
+          >
+            <i class="fa-solid fa-shoe-prints"></i>
+            <span
+              class="ml-6 text-gray-500 text-sm font-semibold"
+              href="ayakkabı"
+              >ayakkabı</span
+            >
+          </a>
+          <a
+            class="px-6 py-3 flex items-center hover:bg-gray-200 transition"
+            href="saat"
+          >
+            <i class="fa-solid fa-clock"></i>
+            <span class="ml-6 text-gray-500 text-sm font-semibold">Saat</span>
+          </a>
+          <a
+            class="px-6 py-3 flex items-center hover:bg-gray-200 transition"
+            href="elbise"
+          >
+            <i class="fa-solid fa-person-dress"></i>
+            <span class="ml-6 text-gray-500 text-sm font-semibold">elbise</span>
+          </a>
+          <a
+            class="px-6 py-3 flex items-center hover:bg-gray-200 transition"
+            href="telefon"
+          >
+            <i class="fa-solid fa-mobile-button"></i>
+            <span class="ml-6 text-gray-500 text-sm font-semibold"
+              >Telefon</span
+            >
+          </a>
+          <a
+            class="px-6 py-3 flex items-center hover:bg-gray-200 transition"
+            href="bilgisayar"
+          >
+            <i class="fa-solid fa-computer"></i>
+            <span class="ml-6 text-gray-500 text-sm font-semibold"
+              >Bilgisayar</span
+            >
+          </a>
+          <a
+            class="px-6 py-3 flex items-center hover:bg-gray-200 transition"
+            href="spor"
+          >
+            <i class="fa-solid fa-bicycle"></i>
+            <span class="ml-6 text-gray-500 text-sm font-semibold">Spor</span>
+          </a>
+          <a
+            class="px-6 py-3 flex items-center hover:bg-gray-200 transition"
+            href="car"
+          >
+            <i class="fa-solid fa-car"></i>
+            <span class="ml-6 text-gray-500 text-sm font-semibold"
+              >Can Ayan</span
+            >
+          </a>
+        </div>
+      </div>
+      <div class="flex items-center flex-grow pl-16 justify-between">
+        <div class="flex items-center space-x-7 text-base">
+          <a
+            class="text-white font-semibold hover:text-gray-200 transition"
+            href="anasayfa"
+          >
+            <i class="fa-solid fa-house"></i> Anasayfa</a
+          >
+          <a
+            class="text-white font-semibold hover:text-gray-200 transition"
+            href="al"
+          >
+            <i class="fa-solid fa-bag-shopping"></i> Alışveriş</a
+          >
+          <a
+            class="text-white font-semibold hover:text-gray-200 transition"
+            href="about"
+          >
+            <i class="fa-solid fa-address-card"></i> Hakkımızda</a
+          >
+          <a
+            class="text-white font-semibold hover:text-gray-200 transition"
+            href="iletişim"
+          >
+            <i class="fa-solid fa-phone"></i> İletişim</a
+          >
+          <a
+            class="text-white font-semibold hover:text-gray-200 transition"
+            href="kargo"
+          >
+            <i class="fa-solid fa-truck-fast"></i> Kargo Bilgisi</a
+          >
+        </div>
+        <div class="space-x-4">
+          @if (!islogin) {
+            <a
+              class="text-white font-semibold hover:text-gray-200 transition"
+              href="login"
+            >
+              <i class="fa-solid fa-user"></i> Giriş Yap</a
+            >
+            <a
+              class="text-white font-semibold hover:text-gray-200 transition"
+              href="register"
+            >
+              <i class="fa-solid fa-user-plus"></i> Kayıt ol</a
+            >
+        }
+        @if(islogin){
+          <a
+          class="text-white font-semibold hover:text-gray-200 transition"
+          (click)="signOut()"
+        ><a
+        class="text-white font-semibold hover:text-gray-200 transition"
+        href="login"
+      >
+          <i class="fa-solid fa-user-plus"></i> Çıkış Yap</a
+        >
+        </a>
+        }
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

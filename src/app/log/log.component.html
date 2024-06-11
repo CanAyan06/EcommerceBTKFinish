@@ -1,0 +1,13 @@
+<div class="login wrap">
+  <form class="form1" [formGroup]="can">
+    <input id="email_field" class="input_field" type="text" name="input-name" title="Inpit title" placeholder="CAN@mail.com" formControlName="email">
+    <input id="password_field" class="input_field" type="password" name="input-name" title="Inpit title" placeholder="Password" formControlName="password">
+
+    <p class="signin"><a href="register">Kayıt Ol</a> </p>
+    
+    <input type="submit" (click)="gir()" value="Log in" />
+    <button class="sign-in_btn" type="submit" title="Sign In" (click)="gir()"></button>
+  </form>
+</div>
+
+
